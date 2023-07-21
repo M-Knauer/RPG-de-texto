@@ -1,13 +1,13 @@
-from entity.characters.Player import *
+from models.characters.Player import *
 
-class PlayerWarrior(Player):
+class PlayerMage(Player):
     def __init__(self, name, class_, life, weaponDmg):
         super().__init__(name, class_, life, weaponDmg)
 
     def lightAtk(self):
-        print("*Cross section*")
+        print("*Fire ball*")
         return super().lightAtk()
     
     def heavyAtk(self):
-        print("*Sword swirl*")
+        print("*Meteor shower*")
         return super().heavyAtk()
